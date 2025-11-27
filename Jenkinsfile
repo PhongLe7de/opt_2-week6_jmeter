@@ -3,7 +3,6 @@ pipeline {
 
     environment {
         JAVA_HOME = '/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home'
-        JMETER_HOME = '/Applications/apache-jmeter-5.6.3'
         PATH = "${JAVA_HOME}/bin:${JMETER_HOME}/bin:${env.PATH}"
     }
 
