@@ -14,13 +14,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'mvn clean install'
+                sh 'mvn clean install'
             }
         }
 
         stage('Non-Functional Test') {
             steps {
-                bat 'jmeter -n -t tests/performance/demo.jmx -l result.jtl'
+                sh 'jmeter -n -t tests/performance/demo.jmx -l result.jtl'
             }
         }
     }
