@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        JAVA_HOME = 'C:\\Program Files\\Java\\jdk-17'
-        JMETER_HOME = 'C:\\Tools\\apache-jmeter-5.6.3'
-        PATH = "/usr/local/bin:${env.PATH}"
+        JAVA_HOME = '/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home'
+        JMETER_HOME = '/Applications/apache-jmeter-5.6.3'
+        PATH = "${JAVA_HOME}/bin:${JMETER_HOME}/bin:${env.PATH}"
     }
 
     tools {
